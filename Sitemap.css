@@ -1,0 +1,182 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+    border-radius: 8px;
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #2c3e50;
+}
+
+nav {
+    background: #2c3e50;
+    border-radius: 12px;
+    padding: 4px 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover{
+    background: #1a252f;
+    transform: scale(1.05);
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background: #1f2e3d;
+    border-radius: 8px;
+    min-width: 180px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li a {
+    padding: 10px 16px;
+    display: block;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    background: url('SitemapHero.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    background-attachment: fixed;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* ===== Sitemap Content ===== */
+.sitemap {
+    background: #f8f9fb;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.sitemap h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.sitemap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.sitemap-column {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.sitemap-column:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.sitemap-column h3 {
+    color: #1a252f;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.sitemap-column ul {
+    list-style: none;
+}
+
+.sitemap-column ul li {
+    margin-bottom: 10px;
+}
+
+.sitemap-column ul li a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.sitemap-column ul li a:hover {
+    color: #e74c3c;
+}
+
+/* ===== Footer ===== */
+.footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
